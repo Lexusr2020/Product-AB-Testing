@@ -1,0 +1,121 @@
+
+
+JOIN ALL TABLES WITH COLUMNS { ID, COUNTRY, GENDER, PURCHASE_DATE, DEVICE, SPENT, GROUP, JOIN_DATE}
+
+
+Select u.*,
+    a.*,
+    g.group,
+    g.join_dt
+from users u
+FULL JOIN activity a 
+ON u.id = a.uid
+FULL JOIN groups g 
+ON u.id = g.uid
+
+
+FROM ALL_DATA CREATE purchased COLUMN AS T1 TABLE
+
+WITH all_data as (
+Select u.*,
+    a.*,
+    g.group,
+    g.join_dt
+from users u
+FULL JOIN activity a 
+ON u.id = a.uid
+FULL JOIN groups g 
+ON u.id = g.uid)
+
+
+Select *,
+    CASE WHEN a.dt IS NOT NULL Then 1
+    ELSE 0 
+    END as purchased
+from all_data a
+
+
+FROM T1 GET ALL IDS WHO PURCHASED AT LEAST ONCE
+
+
+WITH all_data as (
+Select u.*,
+    a.*,
+    g.group,
+    g.join_dt
+from users u
+FULL JOIN activity a 
+ON u.id = a.uid
+FULL JOIN groups g 
+ON u.id = g.uid),
+
+t1 as (
+Select *,
+    CASE WHEN a.dt IS NOT NULL Then 1
+    ELSE 0 
+    END as purchased
+from all_data a)
+
+SELECT id,
+    purchased
+from t1
+where purchased != 0
+
+FROM HERE WE CAN GET ID WHO PURCHASED 1 TIME OR MULTIPLE TIMES
+
+
+WITH all_data as (
+Select u.*,
+    a.*,
+    g.group,
+    g.join_dt
+from users u
+FULL JOIN activity a 
+ON u.id = a.uid
+FULL JOIN groups g 
+ON u.id = g.uid),
+
+t1 as (
+Select *,
+    CASE WHEN a.dt IS NOT NULL Then 1
+    ELSE 0 
+    END as purchased
+from all_data a),
+
+t2 as (
+SELECT id,
+    purchased
+from t1
+where purchased != 0)
+
+Select id,
+    Count(purchased)
+from t2
+group By 1
+order by 2 desc
+
+
+
+Get number of purchases in Test Group
+
+WITH all_data as (
+Select * 
+from users u
+Full Join activity a
+ON u.id = a.uid
+Full JOIN groups g
+ON u.id = g.uid),
+
+t1 as (
+select *,
+    CASE WHEN dt IS NOT NULL THEN 1
+    ELSE 0
+    END AS purchase_status
+from all_data)
+
+Select count(purchase_status) 
+From t1 
+where purchase_status = 1 AND t1.group = 'B'
+
+
+
