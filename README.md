@@ -11,7 +11,7 @@ In this project, I conducted a detailed examination of the average amount spent 
 
 95% Confidence Interval for Control Group:
 
-  ('*') Utilized the t-distribution to calculate a 95% confidence interval for the average amount spent per user in the control group. This interval provides a range within which we are 95% confident that the true average spending per user lies.
+⋅⋅* Utilized the t-distribution to calculate a 95% confidence interval for the average amount spent per user in the control group. This interval provides a range within which we are 95% confident that the true average spending per user lies.
 
 95% Confidence Interval for Treatment Group:
 
