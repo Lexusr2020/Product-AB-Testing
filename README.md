@@ -11,17 +11,17 @@ In this project, I conducted a detailed examination of the average amount spent 
 
 95% Confidence Interval for Control Group:
 
-  Utilized the t-distribution to calculate a 95% confidence interval for the average amount spent per user in the control group. This interval provides a range within which we are 95% confident that the true average spending per user lies.
+(*) Utilized the t-distribution to calculate a 95% confidence interval for the average amount spent per user in the control group. This interval provides a range within which we are 95% confident that the true average spending per user lies.
 
 95% Confidence Interval for Treatment Group:
 
-  Similarly, applied the t-distribution to establish a 95% confidence interval for the average amount spent per user in the treatment group. This interval serves as a robust estimate, considering the variability in user spending.
+(*) Similarly, applied the t-distribution to establish a 95% confidence interval for the average amount spent per user in the treatment group. This interval serves as a robust estimate, considering the variability in user spending.
 
 Hypothesis Test for Group Comparison:
 
-  Conducted a hypothesis test to ascertain whether there is a significant difference in the average amount spent per user between the two groups. Employed the t-distribution and assumed unequal variance, setting a 5% significance level.
+(*) Conducted a hypothesis test to ascertain whether there is a significant difference in the average amount spent per user between the two groups. Employed the t-distribution and assumed unequal variance, setting a 5% significance level.
 
-  The resulting p-value from the hypothesis test was analyzed to draw conclusions regarding the presence or absence of a statistically significant difference in spending patterns between the control and treatment groups.
+(*) The resulting p-value from the hypothesis test was analyzed to draw conclusions regarding the presence or absence of a statistically significant difference in spending patterns between the control and treatment groups.
 
   
 This analytical approach provides a comprehensive understanding of the spending dynamics in the A/B testing scenario, offering insights into the confidence intervals and statistical significance of observed differences between the two user groups.
