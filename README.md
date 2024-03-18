@@ -28,11 +28,11 @@ This analytical approach provides a comprehensive understanding of the spending 
 
 
 
-Final Report
+Final Report  
 https://github.com/Lexusr2020/Product-AB-Testing/blob/main/Mastery%20Project%201%20Report.pdf
 
-Video Presentation
+Video Presentation  
 https://drive.google.com/file/d/1Y8dB8MK03kESXs2Z9ZQ7zC2dcpxqL8ok/view?usp=drive_link
 
-Tableau
+Tableau  
 https://public.tableau.com/app/profile/lex.romo/viz/MasteryProject1_2_0/Story?publish=yes
